@@ -1,12 +1,12 @@
 # Dogewoof Flutter App :dog:
 
 ## Anggota Kelompok
-1. Ayu Putri Dewi Fitriyani
-2. Ikra Bhaktiananda
-3. Adam Wilson Autan
-4. Ernest Beneditus Manurung
-5. Valerian Salim
-6. Syafri Barry Salim
+1. Ayu Putri Dewi Fitriyani (2106654845)
+2. Ikra Bhaktiananda (2106637580)
+3. Adam Wilson Autan (2106752110)
+4. Ernest Beneditus Manurung (2106751000)
+5. Valerian Salim (2106630012)
+6. Syafri Barry Salim (2106752136)
 
 ## What are we
 
@@ -19,6 +19,8 @@ Modul yang berhubungan dengan *authentication* yang mencakup *login* dan *regist
 
 ### Modul Landing Page 
 Modul yang berupa homepage yang akan disajikan kepada pengguna ketika mengakses *site*, isinya berupa jenis-jenis anjing secara *general* yang akan ditampilkan.
+* **Admin** dapat melihat feedback yang telah disubmit pada website dogewoof
+* **User** tidak dapat melihat feedback, hanya bisa memberikan feedback
 
 ### Modul Artikel Jenis-Jenis Anjing
 Modul yang menampilkan spesifikasi anjing beserta artikelnya apabila user memilih salah satu anjing dari yang tersedia di *landing page* sebelumnya.
@@ -31,3 +33,6 @@ Modul yang berisi berbagai peralatan anjing yang akan dijual.
 
 ### Modul FAQ
 Modul yang berisi Frequently Asked Question, pertanyaan-pertanyaan penjual yang ingin ditanyakan kepada satu sama lain.
+
+## WebService
+Aplikasi ini akan menggunakan API yang telah dibuat pada Proyek Tugas Semester. API yang dapat digunakan antara lain adalah `POST` dan `GET`, salah satu contohnya adalah melakukan `POST` pada endpoint untuk memberikan feedback, atau menggunakan `GET` pada endpoint yang memberikan data-data barang perlengkapan ataupun anjing yang dijual.
