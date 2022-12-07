@@ -21,6 +21,12 @@ class DrawerWidget extends StatelessWidget {
             },
         ),
         ListTile(
+            title: const Text('Register'),
+            onTap: () async {
+                Navigator.pushNamed(context, '/register');
+            },
+        ),
+        ListTile(
             title: const Text('Logout'),
             onTap: () async {
                 if (request.loggedIn) {
