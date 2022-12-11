@@ -12,28 +12,39 @@ class DrawerWidget extends StatelessWidget {
         ListTile(
             title: const Text('Home'),
             onTap: () {
-                Navigator.pushNamed(context, '/');
+              Navigator.pushNamed(context, '/');
             }),
         ListTile(
-            title: const Text('Login'),
-            onTap: () {
-                Navigator.pushNamed(context, '/login');
-            },
+          title: const Text('Login'),
+          onTap: () {
+            Navigator.pushNamed(context, '/login');
+          },
         ),
         ListTile(
-            title: const Text('Register'),
-            onTap: () async {
-                Navigator.pushNamed(context, '/register');
-            },
+          title: const Text('Register'),
+          onTap: () async {
+            Navigator.pushNamed(context, '/register');
+          },
         ),
         ListTile(
-            title: const Text('Logout'),
-            onTap: () async {
-                if (request.loggedIn) {
-                    final response = await request.logout("$siteUrl/authentication/logout/");
-                    Navigator.pushNamed(context, '/login');
-                }
-            },
+          title: const Text('Logout'),
+          onTap: () async {
+            if (request.loggedIn) {
+              final response =
+                  await request.logout("$siteUrl/authentication/logout/");
+              Navigator.pushNamed(context, '/login');
+            }
+          },
+        ),
+        ListTile(
+          title: const Text('Profile'),
+          onTap: () async {
+            if (request.loggedIn) {
+              Navigator.pushNamed(context, '/profile');
+            } else {
+              Navigator.pushNamed(context, '/login');
+            }
+          },
         ),
       ]),
     );
