@@ -15,11 +15,6 @@ class DrawerWidget extends StatelessWidget {
               Navigator.pushNamed(context, '/');
             }),
         ListTile(
-            title: const Text('Dog Market'),
-            onTap: () {
-              Navigator.pushNamed(context, '/dog_market/listing');
-            }),
-        ListTile(
           title: const Text('Login'),
           onTap: () {
             Navigator.pushNamed(context, '/login');
@@ -32,11 +27,33 @@ class DrawerWidget extends StatelessWidget {
           },
         ),
         ListTile(
+            title: const Text('FAQ'),
+            onTap: () async {
+                Navigator.pushNamed(context, '/faqhome');  
+            },
+        ),
+        ListTile(
+            title: const Text('Supplies Marketplace'),
+            onTap: () async {
+                Navigator.pushNamed(context, '/supplies');
+            },
+        ),
+        ListTile(
           title: const Text('Logout'),
           onTap: () async {
             if (request.loggedIn) {
               final response =
                   await request.logout("$siteUrl/authentication/logout/");
+              Navigator.pushNamed(context, '/login');
+            }
+          },
+        ),
+        ListTile(
+          title: const Text('Profile'),
+          onTap: () async {
+            if (request.loggedIn) {
+              Navigator.pushNamed(context, '/profile');
+            } else {
               Navigator.pushNamed(context, '/login');
             }
           },
