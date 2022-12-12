@@ -1,5 +1,6 @@
 import 'package:dogewoof/pages/auth/registerpage.dart';
 import 'package:dogewoof/pages/home/donations.dart';
+import 'package:dogewoof/pages/supplies/supplies.dart';
 import 'package:dogewoof/pages/userprofile/editprofilepage.dart';
 import 'package:dogewoof/pages/userprofile/profilepage.dart';
 import 'package:dogewoof/pages/userprofile/tambahsaldopage.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
           "/profile": (BuildContext context) => const HomeStateful(),
           "/editProfile": (BuildContext context) => EditProfile(),
           "/addSaldo": (BuildContext context) => AddSaldo(),
+          "/supplies": (BuildContext context) => const SuppliesPage(),
         },
       ),
     );
