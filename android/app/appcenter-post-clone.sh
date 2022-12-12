@@ -34,19 +34,3 @@ mkdir -p android/app/build/outputs/apk/; mv build/app/outputs/apk/release/app-re
 
 # copy the AAB where AppCenter will find it
 #mkdir -p android/app/build/outputs/bundle/; mv build/app/outputs/bundle/release/app-release.aab $_
-Buka file /android/.gitignore dan ubahlah file tersebut menjadi berikut. Hal ini dilakukan agar App Center dapat mendeteksi aplikasi sebagai aplikasi Android.
-
-# add comment for app center
-# gradle-wrapper.jar
-# /gradlew
-# /gradlew.bat
-/.gradle
-/captures/
-/local.properties
-GeneratedPluginRegistrant.java
-
-# Remember to never publicly share your keystore.
-# See https://flutter.dev/docs/deployment/android#reference-the-keystore-from-the-app
-key.properties
-**/*.keystore
-**/*.jks
