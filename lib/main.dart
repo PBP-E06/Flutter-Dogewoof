@@ -14,6 +14,9 @@ import 'package:dogewoof/widgets/drawer.dart';
 import 'package:dogewoof/pages/userprofile/profilepage.dart';
 import 'package:dogewoof/pages/userprofile/editprofilepage.dart';
 
+import 'pages/faq/pages/faqhomepage.dart';
+import 'pages/faq/pages/inputquestion.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -35,13 +38,15 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.orange,
         ),
         routes: {
-          "/": (BuildContext context) => const HomePage(),
-          "/login": (BuildContext context) => const LoginPage(),
-          "/register": (BuildContext context) => const RegisterPage(),
-          "/profile": (BuildContext context) => const HomeStateful(),
-          "/editProfile": (BuildContext context) => EditProfile(),
-          "/addSaldo": (BuildContext context) => AddSaldo(),
-          "/supplies": (BuildContext context) => const SuppliesPage(),
+            "/": (BuildContext context) => const HomePage(),
+            "/login": (BuildContext context) => const LoginPage(),
+            "/register": (BuildContext context) => const RegisterPage(),
+            "/profile": (BuildContext context) => const HomeStateful(),
+            "/editProfile": (BuildContext context) => EditProfile(),
+            "/addSaldo": (BuildContext context) => AddSaldo(),
+            "/supplies": (BuildContext context) => const SuppliesPage(),
+            "/faqhome": (BuildContext context) => const FAQHomepage(),
+            "/inputquestions": (BuildContext context) => const FAQInputPage(),
         },
       ),
     );
