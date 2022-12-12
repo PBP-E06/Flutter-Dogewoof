@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:dogewoof/widgets/drawer.dart';
 import 'package:dogewoof/pages/home/home.dart';
 import 'package:dogewoof/pages/home/donations.dart';
+import 'package:dogewoof/pages/home/feedbackpage.dart';
 import 'package:dogewoof/assets/constants.dart';
 
 class HomePage extends StatefulWidget {
@@ -22,9 +23,7 @@ class _HomePage extends State<HomePage> {
     static const List<Widget> _widgetOptions = <Widget>[
         HomeState(),
         DonationPage(),
-        Text(
-            "Coming soon"
-        )
+        FeedbackPage(),
     ];
 
     void _onItemTapped(int index) {
