@@ -22,6 +22,7 @@ class SubmitDogPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text("New Listing"),
         ),
+        drawer: DrawerWidget(),
         body: const MyCustomForm(),
       ),
     );

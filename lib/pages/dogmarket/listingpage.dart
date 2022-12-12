@@ -19,7 +19,7 @@ class _ListingPage extends State<ListingPage> {
     List _list_dog = List.empty();
 
     Future<List<DogItem>> getDogList() async {
-      var response = await request.get("$siteUrl/get-contact-us/");
+      var response = await request.get("$siteUrl/dog_market/getlisting/");
       List<DogItem> listFeedback = [];
       for (var d in response) {
         if (d != null) {
@@ -31,9 +31,11 @@ class _ListingPage extends State<ListingPage> {
     }
 
     return Scaffold(
+      appBar: AppBar(title: const Text('Dog Marketplace')),
+      drawer: DrawerWidget(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/dog_market/submitdogpage');
+          Navigator.pushNamed(context, '/dog_market/submitdog');
         },
         backgroundColor: Colors.orange,
         child: const Icon(Icons.post_add),
@@ -92,12 +94,9 @@ class _ListingPage extends State<ListingPage> {
                         width: 100,
                         height: 100,
                         decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(8.0),
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: NetworkImage(_item.imageUrl),
-                            ))),
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(8.0),
+                        )),
                   ],
                 ),
               );

@@ -27,6 +27,12 @@ class DrawerWidget extends StatelessWidget {
             },
         ),
         ListTile(
+            title: const Text('Dog Marketplace'),
+            onTap: () async {
+                Navigator.pushNamed(context, '/dog_market/listing');
+            },
+        ),
+        ListTile(
             title: const Text('Artikel'),
             onTap: () {
                 Navigator.pushNamed(context, '/artikel');

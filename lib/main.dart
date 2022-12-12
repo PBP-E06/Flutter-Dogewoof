@@ -19,6 +19,9 @@ import 'package:dogewoof/pages/artikel/page/artikel_page.dart';
 import 'pages/faq/pages/faqhomepage.dart';
 import 'pages/faq/pages/inputquestion.dart';
 
+import 'package:dogewoof/pages/dogmarket/listingpage.dart';
+import 'package:dogewoof/pages/dogmarket/submitdogpage.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -50,6 +53,8 @@ class MyApp extends StatelessWidget {
             "/faqhome": (BuildContext context) => const FAQHomepage(),
             "/inputquestions": (BuildContext context) => const FAQInputPage(),
             "/artikel": (BuildContext context) => const ArtikelPage(),
+            "/dog_market/listing": (BuildContext context) => const ListingPage(),
+            "/dog_market/submitdog": (BuildContext context) => const SubmitDogPage(),
         },
       ),
     );
