@@ -20,7 +20,7 @@ class SubmitDogPage extends StatelessWidget {
       title: appTitle,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(appTitle),
+          title: const Text("New Listing"),
         ),
         body: const MyCustomForm(),
       ),
@@ -56,14 +56,6 @@ class MyCustomFormState extends State<MyCustomForm> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          TextFormField(
-            validator: (value) {
-              if (value == null || value.isEmpty) {
-                return 'Please enter some text';
-              }
-              return null;
-            },
-          ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
             child: TextFormField(
@@ -76,6 +68,51 @@ class MyCustomFormState extends State<MyCustomForm> {
               decoration: const InputDecoration(
                 border: UnderlineInputBorder(),
                 labelText: 'Enter listing title',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+            child: TextFormField(
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter some text';
+                }
+                return null;
+              },
+              decoration: const InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'What breed?',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+            child: TextFormField(
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter some text';
+                }
+                return null;
+              },
+              decoration: const InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'Price?',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+            child: TextFormField(
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter some text';
+                }
+                return null;
+              },
+              decoration: const InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'Enter description',
               ),
             ),
           ),
