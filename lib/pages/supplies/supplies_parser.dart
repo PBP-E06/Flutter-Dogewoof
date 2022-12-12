@@ -26,7 +26,7 @@ Future<List<Product>> fetchSupplies() async {
 
 void createProduct( String title, String price, String description, String contact) async {
   final response = await http
-      .post(Uri.parse('https://dogewoof.up.railway.app/supplies/json/'), body: {
+      .post(Uri.parse('https://dogewoof.up.railway.app/supplies/add-flutter/'), body: {
     'title': title,
     'price': price,
     'description': description,
