@@ -35,6 +35,12 @@ class DrawerWidget extends StatelessWidget {
                 }
             },
         ),
+        ListTile(
+            title: const Text('Artikel'),
+            onTap: () {
+                Navigator.pushNamed(context, '/artikel');
+            },
+        ),
       ]),
     );
   }

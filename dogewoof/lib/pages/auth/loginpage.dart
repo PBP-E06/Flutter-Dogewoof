@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:pbp_django_auth/pbp_django_auth.dart';
 import 'package:provider/provider.dart';
 
+import '../../assets/environment.dart';
+
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   static const routeName = "login";
@@ -112,6 +114,7 @@ class _LoginPageState extends State<LoginPage> {
                                                 'password':_password,
                                             });
                                             if (request.loggedIn) {
+                                                User.isLogin = true;
                                                 Navigator.pushNamed(context, '/');
                                             }
                                             else {
