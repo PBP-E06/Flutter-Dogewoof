@@ -1,3 +1,5 @@
+[![Build status](https://build.appcenter.ms/v0.1/apps/92418837-9f7d-4633-86c6-0f8fafd1bf94/branches/main/badge)](https://appcenter.ms)
+
 # Dogewoof Flutter App :dog:
 
 ## Anggota Kelompok
@@ -19,8 +21,6 @@ Modul yang berhubungan dengan *authentication* yang mencakup *login* dan *regist
 
 ### Modul Landing Page 
 Modul yang berupa homepage yang akan disajikan kepada pengguna ketika mengakses *site*, isinya berupa jenis-jenis anjing secara *general* yang akan ditampilkan.
-* **Admin** dapat melihat feedback yang telah disubmit pada website dogewoof
-* **User** tidak dapat melihat feedback, hanya bisa memberikan feedback
 
 ### Modul Artikel Jenis-Jenis Anjing
 Modul yang menampilkan spesifikasi anjing beserta artikelnya apabila user memilih salah satu anjing dari yang tersedia di *landing page* sebelumnya.
