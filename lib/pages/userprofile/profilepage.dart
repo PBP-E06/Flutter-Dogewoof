@@ -34,7 +34,7 @@ class _HomeStatefulState extends State<HomeStateful> {
     Future<void> connectAPI() async {
       var hasilResponse = await request.get("$siteUrl/profile/");
 
-      print(hasilResponse);
+    //   print(hasilResponse);
 
       setState(() {
         username = hasilResponse['data']['username'];

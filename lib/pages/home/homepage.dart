@@ -59,6 +59,7 @@ class _HomePage extends State<HomePage> {
                         icon: Icon(Icons.comment),
                         label: 'Feedback',
                     ),
+                    
                 ],
                 currentIndex: _selectedIndex,
                 selectedItemColor: Colors.amber[800],

@@ -13,6 +13,8 @@ import 'package:dogewoof/pages/auth/loginpage.dart';
 import 'package:dogewoof/widgets/drawer.dart';
 import 'package:dogewoof/pages/userprofile/profilepage.dart';
 import 'package:dogewoof/pages/userprofile/editprofilepage.dart';
+import 'package:dogewoof/pages/artikel/page/artikel_page.dart';
+
 
 import 'pages/faq/pages/faqhomepage.dart';
 import 'pages/faq/pages/inputquestion.dart';
@@ -47,6 +49,7 @@ class MyApp extends StatelessWidget {
             "/supplies": (BuildContext context) => const SuppliesPage(),
             "/faqhome": (BuildContext context) => const FAQHomepage(),
             "/inputquestions": (BuildContext context) => const FAQInputPage(),
+            "/artikel": (BuildContext context) => const ArtikelPage(),
         },
       ),
     );

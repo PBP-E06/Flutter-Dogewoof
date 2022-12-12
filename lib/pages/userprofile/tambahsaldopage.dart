@@ -33,7 +33,7 @@ class AddSaldo extends StatelessWidget {
                 int.parse(saldoController.text),
               ).then(
                 (response) {
-                  print("Kembali ke Home & kasih notif snack bar");
+                //   print("Kembali ke Home & kasih notif snack bar");
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text("Saldo Berhasil ditambahkan"),
@@ -69,7 +69,7 @@ class AddSaldo extends StatelessWidget {
                       int.parse(saldoController.text)
                     ).then(
                       (response) {
-                        print("Kembali ke Home & kasih notif snack bar");
+                        // print("Kembali ke Home & kasih notif snack bar");
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text("Saldo Berhasil ditambahkan"),

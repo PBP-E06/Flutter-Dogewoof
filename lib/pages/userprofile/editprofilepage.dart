@@ -47,7 +47,7 @@ class EditProfile extends StatelessWidget {
               )
                   .then(
                 (response) {
-                  print("Kembali ke Home & kasih notif snack bar");
+                //   print("Kembali ke Home & kasih notif snack bar");
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text("Berhasil ditambahkan"),
@@ -105,7 +105,7 @@ class EditProfile extends StatelessWidget {
                     )
                         .then(
                       (response) {
-                        print("Kembali ke Home & kasih notif snack bar");
+                        // print("Kembali ke Home & kasih notif snack bar");
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text("Berhasil ditambahkan"),
