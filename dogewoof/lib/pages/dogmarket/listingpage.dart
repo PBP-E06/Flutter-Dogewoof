@@ -31,6 +31,13 @@ class _ListingPage extends State<ListingPage> {
     }
 
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/dog_market/submitdogpage');
+        },
+        backgroundColor: Colors.orange,
+        child: const Icon(Icons.post_add),
+      ),
       body: Center(
         child: Container(
           constraints: const BoxConstraints(maxWidth: 400),
