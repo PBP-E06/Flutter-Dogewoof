@@ -21,7 +21,7 @@ Dogewoof is an e-commerce website that specializes in all things related to dogs
 Modul yang berhubungan dengan *authentication* yang mencakup *login* dan *register*. Masing-masing *user* dapat menjual atau membeli anjing yang ada.
 
 ### Modul Landing Page 
-Modul yang berupa homepage yang akan disajikan kepada pengguna ketika mengakses *site*, isinya berupa jenis-jenis anjing secara *general* yang akan ditampilkan.
+Modul yang berupa homepage yang akan disajikan kepada pengguna ketika mengakses *site*, isinya berupa fitur donasi dan feedback yang dapat diisi oleh user yang telah login. Juga user dapat melihat donasi-donasi dan feedback yang telah diberikan.
 
 ### Modul Artikel Jenis-Jenis Anjing
 Modul yang menampilkan spesifikasi anjing beserta artikelnya apabila user memilih salah satu anjing dari yang tersedia di *landing page* sebelumnya.
