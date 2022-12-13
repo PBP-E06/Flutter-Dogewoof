@@ -1,4 +1,5 @@
 [![Build status](https://build.appcenter.ms/v0.1/apps/92418837-9f7d-4633-86c6-0f8fafd1bf94/branches/main/badge)](https://appcenter.ms)
+[![Release](https://github.com/PBP-E06/Flutter-Dogewoof/actions/workflows/release.yaml/badge.svg)](https://github.com/PBP-E06/Flutter-Dogewoof/actions/workflows/release.yaml)
 
 # Dogewoof Flutter App :dog:
 
